@@ -1,0 +1,1372 @@
+﻿
+<html>
+<head>
+<title>Duck Hunter - HTML5 Game For Licensing - MarketJS</title>
+<meta name="description" content="Hunt for ducks in the countryside. Ready, aim and fire your shotgun. How accurate are your shots?  Disclaimer: No actual ducks were harmed in this game.">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?keyAIzaSyBXqXcdvinZsgURKUWnSn7f0dQzCytS0YM&family=Lato:400,700,900,400italic">
+<link href="/shell/base/base.css" rel="stylesheet">
+<link href="/shell/flat-ui/css/flat-ui.css" rel="stylesheet">
+<link href="/shell/tools.css" rel="stylesheet">
+<link href="/shell/progress-tracker/progress-tracker.css" rel="stylesheet">
+<script type="text/javascript" src="/shell/base/base.js"></script>
+<link rel="shortcut icon" href="/shell/flat-ui/images/favicon.ico">
+</head>
+<body>
+
+<h1> Please Wait</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<div class="navbar navbar-inverse">
+<div class="navbar-inner">
+<div class="container-fluid">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="nav-collapse collapse">
+<ul class="nav">
+<div class="logo" style="position:relative;top:5px;"><img alt="MarketJS" src="/shell/header/logo.png"></div>
+<li class="brand">
+<a href="/">
+MarketJS
+</a>
+</li>
+<li><a href="/login">Sign in</a></li>
+<li><a href="/register">Register</a></li>
+<li><a id="shopping-cart-link" href="/cart">Cart (0)</a></li>
+<div class="pull-right">
+<div class="nav" style="line-height:50px;">
+<li><a href="/contact"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;Contact&nbsp;&nbsp;</a></li>
+<li><a href="/case-study"><span style="position:relative;top:3px;" class="fui-heart-16"></span>&nbsp;&nbsp;Case Studies&nbsp;&nbsp;</a></li>
+<li><a href="/blog"><span style="position:relative;top:3px;" class="fui-new-16"></span>&nbsp;&nbsp;Blog&nbsp;&nbsp;</a></li>
+<li><a href="/free-html5-games"><span style="position:relative;top:3px;" class="fui-heart-16"></span>&nbsp;&nbsp;Free HTML5 Games</a></li>
+<li><a href="/developer/game/list">&nbsp;Devs</a></li>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</div>
+<div id="sticky-container">
+
+<link rel="stylesheet" type="text/css" href="/shell/sweetalert/sweetalert.css">
+<script type="text/javascript" src="/shell/sweetalert/sweetalert.min.js"></script>
+<div class="padding-side40">
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+<div class="row-fluid">
+<div class="padding-side20">
+<h1>Duck Hunter</h1>
+</div>
+<div class="horizontal-seperator"></div>
+<div class="padding-side20 tip">
+<a href="https://www.marketjs.com/?page=2" onclick="mixpanel.track('ItemGameDuckHunterPageGoBack')">Back</a>&nbsp;&nbsp;>&nbsp;&nbsp;Duck Hunter
+</div>
+<div class="horizontal-seperator"></div>
+</div>
+<div class="row-fluid">
+<div id="game-window-box" class="span8">
+<div class="row-fluid">
+<div class="span12">
+<div class="well-new">
+<h3><span class="fui-video-24"></span>&nbsp;&nbsp;Desktop Demo </h3>
+<hr>
+<div class="horizontal-seperator"></div>
+<center>
+<iframe src="https://cdn-factory.marketjs.com/en/duck-hunter/index.html" id="game-window" frameborder="0" width="960" height="540" scrolling="no">
+										</iframe>
+</center>
+<div class="horizontal-seperator"></div>
+<div>
+<p style="font-size:1em" class="link-right">
+&nbsp;&nbsp;<a onclick="launchLargeScreen();return false;" href=""><span class="fui-eye-16"></span>&nbsp;&nbsp;big screen version</a>
+</p>
+</div>
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+<h3><span class="fui-checkmark-24"></span>&nbsp;&nbsp;Categories &nbsp;&nbsp;</h3>
+<hr>
+<div class="horizontal-seperator"></div>
+<a style="font-size:1.2em;text-decoration: underline;color:#ff3232;" href="/category/farm">Farm</a>&nbsp;&nbsp;&nbsp;
+<a style="font-size:1.2em;text-decoration: underline;color:#ff3232;" href="/category/arcade">Arcade</a>&nbsp;&nbsp;&nbsp;
+<a style="font-size:1.2em;text-decoration: underline;color:#ff3232;" href="/category/shooting">Shooting</a>&nbsp;&nbsp;&nbsp;
+<a style="font-size:1.2em;text-decoration: underline;color:#ff3232;" href="/category/3d">3D</a>&nbsp;&nbsp;&nbsp;
+<a style="font-size:1.2em;text-decoration: underline;color:#ff3232;" href="/category/animals">Animals</a>&nbsp;&nbsp;&nbsp;
+<a style="font-size:1.2em;text-decoration: underline;color:#ff3232;" href="/category/simulation">Simulation</a>&nbsp;&nbsp;&nbsp;
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+<h3><span class="fui-video-24"></span>&nbsp;&nbsp;Mobile Demo &nbsp;&nbsp;<small>type the URL below into your smartphone or tablet browser</small></h3>
+<hr>
+<div class="horizontal-seperator"></div>
+<div style="font-size:24px;">
+<p>
+<a target="_blank" href="http://bit.ly/duck-hunter">http://bit.ly/duck-hunter</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="well-new">
+<h2><span class="fui-settings-24"></span>&nbsp;&nbsp;Game Tests</h2>
+<hr>
+<div class="horizontal-seperator"></div>
+<table id="test-table" class="table table-striped">
+<thead>
+<tr>
+<th>#</th>
+<th>Manufacturer</th>
+<th>Name</th>
+<th>Platform</th>
+<th>OS</th>
+<th>FPS</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nokia</td>
+<td>Lumia 925</td>
+<td>Windows Phone</td>
+<td>8.1</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Apple</td>
+<td>iPad Air</td>
+<td>iOS</td>
+<td>7.0.4</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Samsung</td>
+<td>Galaxy S4</td>
+<td>Android</td>
+<td>4.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Nokia</td>
+<td>Lumia 525</td>
+<td>Windows Phone</td>
+<td>8.1</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Samsung</td>
+<td>Galaxy Beam</td>
+<td>Android</td>
+<td>2.3.6</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Apple</td>
+<td>iPhone6 Plus</td>
+<td>iOS</td>
+<td>8.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Samsung</td>
+<td>Galaxy Note I</td>
+<td>Android</td>
+<td>2.3.6</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Samsung</td>
+<td>Galaxy Note 8</td>
+<td>Android</td>
+<td>4.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Apple</td>
+<td>iPad4, iPad Pro</td>
+<td>iOS</td>
+<td>10.x, 11.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Apple</td>
+<td>iPhone4</td>
+<td>iOS</td>
+<td>5.1</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Samsung</td>
+<td>Galaxy Note III</td>
+<td>Android</td>
+<td>4.3.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Apple</td>
+<td>iPhone5</td>
+<td>iOS</td>
+<td>7.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Apple</td>
+<td>iPhone 7, 8, X</td>
+<td>iOS</td>
+<td>10.x, 11.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Apple</td>
+<td>iPad2</td>
+<td>iOS</td>
+<td>7.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Samsung</td>
+<td>Galaxy Note II</td>
+<td>Android</td>
+<td>4.1.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Apple</td>
+<td>iPhone6</td>
+<td>iOS</td>
+<td>9.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Apple</td>
+<td>iPhone5C</td>
+<td>iOS</td>
+<td>7.0.1</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>18</td>
+<td>HTC</td>
+<td>One</td>
+<td>Android</td>
+<td>4.1.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Apple</td>
+<td>iPad3</td>
+<td>iOS</td>
+<td>7.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Motorola</td>
+<td>Moto G</td>
+<td>Android</td>
+<td>4.4.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Samsung</td>
+<td>Galaxy S3</td>
+<td>Android</td>
+<td>4.0.x</td>
+<td>60</td>
+<td>Passed</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="well-new" style="padding:0!important;">
+<div class="padding-side10">
+<div class="row-fluid whitelabel-intro">
+<div class="span12">
+<div class="well-plain">
+<h3 class="whitelabel-intro-header">
+Quick game search
+</h3>
+<div class="horizontal-seperator"></div>
+<form action="/search/submit?biggerimage=yes" method="get" name="searchbox-form" id="searchbox-form">
+<div class="control-group">
+<input type="text" class="searchbox span8" value="" placeholder="Enter search term. Eg: puzzle games" name="term" id="term" />
+</div>
+
+<div class="control-group">
+<button type="submit" name="searchbox-button" id="searchbox-button" style="margin-top:-8px;" class="btn btn-primary btn-large">Search</button>
+</div>
+</form>
+<div class="horizontal-seperator"></div>
+<div id="searchbox-results"></div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// Localize
+		Localization.initialize(['']);
+	
+		// Validate	
+		Validation.initialize(['/shell/validation/search/validate.js'])
+		
+		$('#searchbox-form').ajaxForm({
+		    beforeSubmit: function() {
+		    	//$('#captcha').hide();
+				return $('#searchbox-form').valid()
+		    },
+
+		    beforeSend: function() {
+				$('#searchbox-button').attr("disabled", true);
+				$('.overlay-container').show()
+		    },
+		
+			success: function(response) {
+				console.log("search successful");	
+				//console.log(JSON.parse(data))
+				
+				//response = JSON.parse(response);
+				$('#searchbox-results').html(response);
+				$('#searchbox-button').attr("disabled", false);		
+				//mixpanel.track('SearchTerm');									 
+			},
+			
+			complete: function(xhr) {
+				console.log("search completed")
+				$('.overlay-container').hide()
+			}
+			
+		});	
+	});
+
+</script>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="well-new">
+<h2><span class="fui-heart-24"></span>&nbsp;&nbsp;Try these games too</h2>
+<hr>
+<div class="horizontal-seperator"></div>
+<div class="row-fluid">
+<div class="span3">
+<a style="color:#006621;" href="/item/mango-piggy-piggy-farm-harvest">
+<img class="search-results-thumbnail" src="/game/thumbnail/cached/ahVzfm1hcmtldGpzLWVudGVycHJpc2VyEQsSBEdhbWUYgIDAmPDk0wkM">
+</a>
+</div>
+<div class="span9">
+<h3 style="font-size:1.2em"><a href="/item/mango-piggy-piggy-farm-harvest">Mango Piggy Piggy - Farm Harvest</a></h3>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0.2em;"><a style="color:#006621;" href="/item/mango-piggy-piggy-farm-harvest">https://www.marketjs.com/item/mango-piggy-piggy-farm-harvest</a></h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0;padding-bottom:0;padding-bottom:0;">Mango Piggy Piggy is HUNGRY. He comes across a mango farm. The mangoes look sweet and juicy, just like how he likes it.
+Drag and aim to launch ...</h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0.2em;padding-top:0;padding-bottom:0;">Price: 999 USD</h4>
+</div>
+</div>
+<div class="horizontal-seperator-large"></div>
+<div class="row-fluid">
+<div class="span3">
+<a style="color:#006621;" href="/item/bitcoin-tap-tap-mine">
+<img class="search-results-thumbnail" src="/game/thumbnail/cached/ahVzfm1hcmtldGpzLWVudGVycHJpc2VyEQsSBEdhbWUYgIDAxNCphwkM">
+</a>
+</div>
+<div class="span9">
+<h3 style="font-size:1.2em"><a href="/item/bitcoin-tap-tap-mine">Bitcoin Tap Tap Mine</a></h3>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0.2em;"><a style="color:#006621;" href="/item/bitcoin-tap-tap-mine">https://www.marketjs.com/item/bitcoin-tap-tap-mine</a></h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0;padding-bottom:0;padding-bottom:0;">Tap on the screen to earn bitcoin.
+Collect enough bitcoin to purchase hardware upgrades. Increase your earning potential to purchase even better ...</h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0.2em;padding-top:0;padding-bottom:0;">Price: 999 USD</h4>
+</div>
+</div>
+<div class="horizontal-seperator-large"></div>
+<div class="row-fluid">
+<div class="span3">
+<a style="color:#006621;" href="/item/corporate-overlord">
+<img class="search-results-thumbnail" src="/game/thumbnail/cached/ahVzfm1hcmtldGpzLWVudGVycHJpc2VyEQsSBEdhbWUYgICA_KPhkwkM">
+</a>
+</div>
+<div class="span9">
+<h3 style="font-size:1.2em"><a href="/item/corporate-overlord">Corporate Overlord</a></h3>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0.2em;"><a style="color:#006621;" href="/item/corporate-overlord">https://www.marketjs.com/item/corporate-overlord</a></h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0;padding-bottom:0;padding-bottom:0;">Welcome to the corporate world. Build your evil corporation, generate massive wealth and dominate the world! Be the ultimate tycoon of the corporate ...</h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0.2em;padding-top:0;padding-bottom:0;">Price: 999 USD</h4>
+</div>
+</div>
+<div class="horizontal-seperator-large"></div>
+<div class="row-fluid">
+<div class="span3">
+<a style="color:#006621;" href="/item/wasteland-warriors-capture-the-flag">
+<img class="search-results-thumbnail" src="/game/thumbnail/cached/ahVzfm1hcmtldGpzLWVudGVycHJpc2VyEQsSBEdhbWUYgIDAhPP65ggM">
+</a>
+</div>
+<div class="span9">
+<h3 style="font-size:1.2em"><a href="/item/wasteland-warriors-capture-the-flag">Wasteland Warriors Capture The Flag</a></h3>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0.2em;"><a style="color:#006621;" href="/item/wasteland-warriors-capture-the-flag">https://www.marketjs.com/item/wasteland-warriors-capture-the-flag</a></h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0;padding-bottom:0;padding-bottom:0;">Introducing our brand new, 4v4 MOBA real time multiplayer game.
+Pick your sides, grab your weapons and start shooting. Capture the flag for ...</h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0.2em;padding-top:0;padding-bottom:0;">Price: 999 USD</h4>
+</div>
+</div>
+<div class="horizontal-seperator-large"></div>
+<div class="row-fluid">
+<div class="span3">
+<a style="color:#006621;" href="/item/alpha-space-invasion">
+<img class="search-results-thumbnail" src="/game/thumbnail/cached/ahVzfm1hcmtldGpzLWVudGVycHJpc2VyEQsSBEdhbWUYgIDA5MSrngoM">
+</a>
+</div>
+<div class="span9">
+<h3 style="font-size:1.2em"><a href="/item/alpha-space-invasion">Alpha Space Invasion</a></h3>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0.2em;"><a style="color:#006621;" href="/item/alpha-space-invasion">https://www.marketjs.com/item/alpha-space-invasion</a></h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0;padding-bottom:0;padding-bottom:0;">Alpha sector is under invasion. Young pilot, your task is simple. Warp into the sector, and destroy enemy spacecraft before they destroy you. ...</h4>
+<h4 style="color:#545454;font-size:1em;margin-bottom:0;margin-top:0.2em;padding-top:0;padding-bottom:0;">Price: 999 USD</h4>
+</div>
+</div>
+<div class="horizontal-seperator-large"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="span4">
+<div class="row-fluid">
+<div class="span12">
+<div class="login-form">
+<table width="100%">
+<tr>
+<td>
+<h3 style="font-size:1.3em">
+<span class="fui-checkround-24"></span>&nbsp;&nbsp;HTML5 Game License
+</h3>
+</td>
+<td align="right"><h3 style="font-size:1.4em">999 USD</h3></td>
+</tr>
+</table>
+<hr>
+<table width="100%">
+<tr>
+<td>
+<h4>summary</h4>
+</td>
+<td align="right">
+<a href="#single-domain-license" data-toggle="modal">read license</a>
+</td>
+</tr>
+</table>
+<ul>
+<li>fully functional, compiled game</li>
+<li>no limits to revenue generation</li>
+<li>deploy on a web domain of choice, unlimited subdomains</li>
+<li>customize ad codes, splash screen, and analytics</li>
+<li>for additional customizations, please contact <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="44373134342b3630042925362f21302e376a272b29">[email&#160;protected]</a></b> - we will provide a custom price quote</li>
+</ul>
+<table>
+<tr>
+<div class="horizontal-seperator"></div>
+</tr>
+</table>
+<form action="/item/add-to-cart?id=duck-hunter" method="post" id="item-add-to-cart" name="item-add-to-cart">
+<div class="control-group">
+<input type="text" style="font-size:0.9em" class="login-field" value="" placeholder="Enter domain to host this game. Eg: mysite.com" name="item-add-to-cart-domainlock" id="item-add-to-cart-domainlock" />
+<label class="login-field-icon fui-lock-16" for="item-add-to-cart-domainlock"></label>
+</div>
+<div class="control-group">
+<button type="submit" disabled class="btn btn-primary btn-large btn-block" id="item-add-to-cart-button" name="item-add-to-cart-button">Add to cart</button>
+</div>
+</form>
+
+ <p class="link-right">
+<img src="/shell/security/payments.png">
+</p>
+<p>
+<a class="link-right" href="#payment-methods" data-toggle="modal">View full list of supported payment methods</a>
+</p>
+<p>
+<a class="link-right" href="#multiple-domain-license" data-toggle="modal">Need multiple domain licenses?</a>
+</p>
+<a class="link-right" href="#offline-license" data-toggle="modal">Need offline licenses?</a>
+</p>
+<a class="link-right" href="#custom-license" data-toggle="modal">Need custom licenses?</a>
+</p>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<div class="well-new">
+<h2><span class="fui-new-24"></span>&nbsp;&nbsp;Game information</h2>
+<hr>
+<div class="horizontal-seperator"></div>
+<p><div id="long-description"><p>Hunt for ducks in the countryside. Ready, aim and fire your shotgun.</p>
+<p>How accurate are your shots? </p>
+<p>Disclaimer: No actual ducks were harmed in this game.</p>
+<p>Features:</p>
+<ul>
+<li>Challenging gameplay. The ducks fly randomly and different speeds</li>
+<li>Cool reload mechanism</li>
+<li>Realistic looking shotgun and hand</li>
+<li>Simple gameplay</li>
+<li>Stats to improve hunting performance</li>
+<li>3D-like graphics</li>
+</ul>
+<p>If you're a fan of archery and wildlife hunting games, this will be a great pick.</p></div></p>
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+<h2><span class="fui-settings-24"></span>&nbsp;&nbsp;Languages supported (26)</h2>
+<div class="horizontal-seperator-small"></div>
+For a small additional fee, we can localize the English version into the following languages:
+<div class="horizontal-seperator-small"></div>
+<table class="table table-striped">
+
+<tbody style="font-size:1.2em">
+German,
+French,
+Italian,
+Japanese,
+Chinese (Simplified and Traditional),
+Taiwanese,
+Portuguese,
+Spanish,
+Korean,
+Arabic,
+Russian,
+Swedish,
+Danish,
+Malay,
+Indonesian,
+Dutch,
+Vietnamese,
+Thai,
+
+Turkish,
+Czech,
+Greek,
+Finnish,
+Tagalog,
+Ukranian,
+Hebrew
+</tbody>
+</table>
+<div class="horizontal-seperator"></div>
+<a class="link-right" href="#localization" data-toggle="modal">I need localization</a>
+<div class="horizontal-seperator"></div>
+<h2><span class="fui-heart-24"></span>&nbsp;&nbsp;Ad integration options</h2>
+<hr>
+<div class="horizontal-seperator"></div>
+<table>
+<tr>
+<td class="span6">
+<h4 id='game-ad-spot-ingame-ad-page-header'>In-game ads</h4>
+<div class="control-group" style="font-size:18px">
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-ingame-ad-pre-roll-checkbox" name="game-adspot-ingame-ad-pre-roll-checkbox" value="True">
+<label for="game-adspot-ingame-ad-pre-roll-checkbox" class="css-label">Pre-roll</label>
+<br>
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-ingame-ad-header-checkbox" name="game-adspot-ingame-ad-header-checkbox" value="True">
+<label for="game-adspot-ingame-ad-header-checkbox" class="css-label">Header</label>
+<br>
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-ingame-ad-footer-checkbox" name="game-adspot-ingame-ad-footer-checkbox" value="True">
+<label for="game-adspot-ingame-ad-footer-checkbox" class="css-label">Footer</label>
+<br>
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-ingame-ad-square-checkbox" name="game-adspot-ingame-ad-square-checkbox" value="True">
+<label for="game-adspot-ingame-ad-square-checkbox" class="css-label">Square</label>
+</div>
+</td>
+<td class="span6">
+<h4 id='game-ad-spot-landing-page-ad-page-header'>Landing page ads</h4>
+<div class="control-group" style="font-size:18px">
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-landing-page-ad-skyscraper-checkbox" name="game-adspot-landing-page-ad-skyscraper-checkbox" value="True">
+<label for="game-adspot-landing-page-ad-skyscraper-checkbox" class="css-label">Skyscraper</label>
+<br>
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-landing-page-ad-header-checkbox" name="game-adspot-landing-page-ad-header-checkbox" value="True">
+<label for="game-adspot-landing-page-ad-header-checkbox" class="css-label">Header</label>
+<br>
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-landing-page-ad-footer-checkbox" name="game-adspot-landing-page-ad-footer-checkbox" value="True">
+<label for="game-adspot-landing-page-ad-footer-checkbox" class="css-label">Footer</label>
+<br>
+<input class="css-checkbox" disabled type="checkbox" checked id="game-adspot-landing-page-ad-square-checkbox" name="game-adspot-landing-page-ad-square-checkbox" value="True">
+<label for="game-adspot-landing-page-ad-square-checkbox" class="css-label">Square</label>
+</div>
+</td>
+</tr>
+</table>
+<div class="horizontal-seperator"></div>
+<h3><span>
+ <small>Please note, that ads are completely optional. By default, all games purchased will have no ads.</small>
+</span>
+</h3>
+</div>
+<div class="well-new">
+<h2><span class="fui-plus-24"></span>&nbsp;&nbsp;Reskin / Rebranding</h2>
+<hr>
+<p>
+For an additional fee, this game can be reskinned or rebranded into a different look and feel. We can change aspects of the game including the characters,
+backgrounds, objects, sound effects and music.
+</p>
+<div>
+<a href="/reskin" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Learn more</a>&nbsp;&nbsp;
+<a href="/reskin#section-contact" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Request a quote</a>
+</div>
+</div>
+<div class="well-new">
+<h2><span class="fui-plus-24"></span>&nbsp;&nbsp;Lead generation system</h2>
+<hr>
+<p>
+For an additional fee, this game can be integrated with our Lead Generation System (LGS). This allows you to capture important user data,
+such as email addresses, names and phone numbers for follow-up marketing and business prospects.
+</p>
+<div>
+<a href="/lead-generation-games" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Learn more </a>&nbsp;&nbsp;
+<a href="/lead-generation-games#section-contact" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Request a quote</a>
+</div>
+</div>
+<div class="well-new">
+<h2><span class="fui-plus-24"></span>&nbsp;&nbsp;Game leaderboard system</h2>
+<hr>
+<p>
+For an additional fee, this game can be integrated with our leaderboard system. Easily rank users via their high scores. Make the game competitive and engaging.
+</p>
+<div>
+<a href="/game-leaderboard-system" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Learn more </a>&nbsp;&nbsp;
+<a href="/game-leaderboard-system#section-contact" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Request a quote</a>
+</div>
+</div>
+<div class="well-new">
+<h2><span class="fui-plus-24"></span>&nbsp;&nbsp;Game login / registration system</h2>
+<hr>
+<p>
+For an additional fee, this game can be integrated with a login and registration system. This allows you to collect user information, build an audience and increase engagement.
+</p>
+<div>
+<a href="/game-login-system" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Learn more </a>&nbsp;&nbsp;
+<a href="/game-login-system#section-contact" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Request a quote</a>
+</div>
+</div>
+<div class="well-new">
+<h2><span class="fui-plus-24"></span>&nbsp;&nbsp;Android APK</h2>
+<hr>
+<p>
+For an additional fee, this game can be converted into an Android APK (native). This allows the game to run on Android devices.
+</p>
+<div>
+<a href="/license-android-games" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Learn more </a>&nbsp;&nbsp;
+<a href="/license-android-games#section-contact" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Request a quote</a>
+</div>
+</div>
+<div class="well-new">
+<h2><span class="fui-plus-24"></span>&nbsp;&nbsp;iOS native</h2>
+<hr>
+<p>
+For an additional fee, this game can be converted into an iOS native build. This allows the game to run on iOS devices.
+</p>
+<div>
+<a href="/license-ios-games" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Learn more </a>&nbsp;&nbsp;
+<a href="/license-ios-games#section-contact" target="_blank" class="btn btn-primary btn-large"><span style="position:relative;top:3px;" class="fui-mail-16"></span>&nbsp;&nbsp;&nbsp;Request a quote</a>
+</div>
+</div>
+
+</div>
+</div>
+<div class="horizontal-seperator"></div>
+<div class="horizontal-seperator"></div>
+</div>
+</div>
+</div>
+<div id="payment-methods" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="login-required-header">List of supported payment methods</h3>
+</div>
+<div class="modal-body">
+<p>
+We accept the following payment methods:
+<ul>
+<li>Visa</li>
+<li>Mastercard</li>
+<li>American Express</li>
+<li>Diners Club</li>
+<li>JCB</li>
+<li>Discover</li>
+<li>Paypal</li>
+<li>Bank/Wire transfer</li>
+</ul>
+</p>
+<p>
+<img src="/shell/security/secure.png">
+</p>
+<p>
+For further inquiries, please contact <a href="/contact" target="_blank"><b>customer support</b></a>.
+</p>
+</div>
+</div>
+<div id="single-domain-license" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="login-required-header">HTML5 Game License - Terms and Conditions </h3>
+</div>
+<div id="notification" class="alert ">
+<div id="notification-message" class="padding-side10">Upon purchase of game, a copy of this license in PDF shall be available for download.</div>
+</div>
+<div class="modal-body">
+<div class="horizontal-seperator"></div>
+<p> <b>Preamble:</b>
+This Agreement, signed on June 27, 2018 [hereinafter: Effective Date] governs the relationship between The Client, a Business Entity, (hereinafter: Licensee) and MarketJS.com (Hereinafter: Licensor). This Agreement sets the terms, rights, restrictions and obligations on using <b>'Duck Hunter'</b> (hereinafter: The Software) created and owned by Licensor, as detailed herein
+</p>
+<div class="horizontal-seperator"></div>
+<p> <b>License Grant:</b>
+Licensor hereby grants Licensee a Commercial, Royalty free, Non-exclusive license, all with accordance with the terms set forth and other legal restrictions set forth in 3rd party software used while running Software. </p>
+<div class="horizontal-seperator"></div>
+<p> <b>Limited:</b>
+Licensee may use Software for the purpose of:
+<ul>
+<li>Running Software on Licensee’s Website[s] and Server only</li>
+</ul>
+</p>
+<div class="horizontal-seperator"></div>
+<p> <b>Non Assignable & Non-Transferable:</b>
+Licensee may not assign or transfer his rights and duties under this license.
+</p>
+<div class="horizontal-seperator"></div>
+<p> <b>Non-Customizable:</b>
+Licensee may customize one (1) splash screen, ad codes and analytic codes upon purchase.
+<br><br>
+Further customization is not permitted.
+<br><br>
+For addition customization services / feature upgrades / etc, please contact <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="aedddbdedec1dcdaeec3cfdcc5cbdac4dd80cdc1c3">[email&#160;protected]</a></b>, and we shall provide custom services at an affordable rate.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Commercial, Royalty Free:</b>
+Licensee may use Software for any purpose, including paid-services, without any royalties.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Single Domain</b>
+Licensee may use Software on unlimited server[s] and 1 website domain, for Licensee’s domain only. Unlimited subdomains is permitted.
+</p>
+<div class="horizontal-seperator"></div>
+<p> <b>Website deployment only</b>
+The game shall not be published on other channels such as App Store / Google Play. For publishing in non-website channels, please contact <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="13606663637c6167537e726178766779603d707c7e">[email&#160;protected]</a></b>, and we shall provide special licenses at an additional fee.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Term & Termination:</b>
+The Term of this license shall be until terminated. Licensor may terminate this Agreement, including Licensee’s license in the case where Licensee :
+</p>
+<ul>
+<li>became insolvent or otherwise entered into any liquidation process; or</li>
+<li>exported The Software to any jurisdiction where licensor may not enforce his rights under this agreements in; or</li>
+<li>Licensee was in breach of any of this license's terms and conditions and such breach was not cured, immediately upon notification; or</li>
+<li>Licensee in breach of any of the terms of clause 2 to this license; or</li>
+<li>Licensee otherwise entered into any arrangement which caused Licensor to be unable to enforce his rights under this License.</li>
+</ul>
+<div class="horizontal-seperator"></div>
+<p><b>Misuse of Software</b>
+On the event that Licensee misuses the software without prior consent of Licensor, Licensor shall terminate the license immediately on a written notice. Licensee shall immediately cease from using the Software.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Payment:</b>
+In consideration of the License granted under clause 2, Licensee shall pay Licensor a fee, via Credit-Card, PayPal or any other mean which Licensor may deem adequate. Failure to perform payment shall construe as material breach of this Agreement.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Upgrades, Updates and Fixes:</b>
+Licensor may provide Licensee, from time to time, with Upgrades, Updates or Fixes, as detailed herein and according to his sole discretion. Licensee hereby warrants to keep The Software up-to-date and install all relevant updates and fixes, and may, at his sole discretion, purchase upgrades, according to the rates set by Licensor. Licensor shall provide any update or Fix free of charge; however, nothing in this Agreement shall require Licensor to provide Updates or Fixes.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Fix:</b>
+for the purpose of this license, a fix shall be a minor amendment in The Software, intended to remove bugs or alter minor features which impair the The Software's functionality. A fix shall be marked as a new sub-sub-version number. For example, should Licensee purchase Software under version 1.1.1, an upgrade shall commence under number 1.1.2.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Bug Notification:</b>
+Licensee may provide Licensor of details regarding any bug, defect or failure in The Software promptly and with no delay from such event; Licensee shall comply with Licensor's request for information regarding bugs, defects or failures and furnish him with information, screenshots and try to reproduce such bugs, defects or failures.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Feature Request:</b>
+Licensee may request additional features in Software, provided, however, that (i) Licensee shall waive any claim or right in such feature should feature be developed by Licensor; (ii) Licensee shall be prohibited from developing the feature, or disclose such feature request, or feature, to any 3rd party directly competing with Licensor or any 3rd party which may be, following the development of such feature, in direct competition with Licensor; (iii) Licensee warrants that feature does not infringe any 3rd party patent, trademark, trade-secret or any other intellectual property right; and (iv) Licensee developed, envisioned or created the feature solely by himself.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Liability:</b>
+To the extent permitted under Law, The Software is provided under an AS-IS basis. Licensor shall never, and without any limit, be liable for any damage, cost, expense or any other payment incurred by Licesee as a result of Software’s actions, failure, bugs and/or any other interaction between The Software and Licesee’s end-equipment, computers, other software or any 3rd party, end-equipment, computer or services. Moreover, Licensor shall never be liable for any defect in source code written by Licensee when relying on The Software or using The Software’s source code.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Intellectual Property:</b>
+Licensor hereby warrants that The Software does not violate or infringe any 3rd party claims in regards to intellectual property, patents and/or trademarks and that to the best of its knowledge no legal action has been taken against it for any infringement or violation of any 3rd party intellectual property rights.
+Licensor is the owner of the Intellectual Property of The Software.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>No-Warranty:</b>
+The Software is provided without any warranty; Licensor hereby disclaims any warranty that The Software shall be error free, without defects or code which may cause damage to Licensee’s computers or to Licensee, and that Software shall be functional. Licensee shall be solely liable to any damage, defect or loss incurred as a result of operating software and undertake the risks contained in running The Software on License’s Server[s] and Website[s].
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Prior Inspection:</b>
+Licensee hereby states that he inspected The Software thoroughly and found it satisfactory and adequate to his needs, that it does not interfere with his regular operation and that it does meet the standards and scope of his computer systems and architecture. Licensee found that The Software interacts with his development, website and server environment and that it does not infringe any of End User License Agreement of any software Licensee may use in performing his services. Licensee hereby waives any claims regarding The Software's incompatibility, performance, results and features, and warrants that he inspected the The Software.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>No Refunds:</b>
+Licensee warrants that he inspected The Software according to previous clause and that it is adequate to his needs. Accordingly, as The Software is intangible goods, Licensee shall not be, ever, entitled to any refund, rebate, compensation or restitution for any reason whatsoever, even if The Software contains material flaws.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Indemnification:</b>
+Licensee hereby warrants to hold Licensor harmless and indemnify Licensor for any lawsuit brought against it in regards to Licensee’s use of The Software in means that violate, breach or otherwise circumvent this license, Licensor's intellectual property rights or Licensor's title in The Software. Licensor shall promptly notify Licensee in case of such legal action and request Licensee’s consent prior to any settlement in relation to such lawsuit or claim.
+</p>
+<div class="horizontal-seperator"></div>
+<p><b>Governing Law, Jurisdiction:</b>
+Licensee hereby agrees not to initiate class-action lawsuits against Licensor in relation to this license and to compensate Licensor for any legal fees, cost or attorney fees should any claim brought by Licensee against Licensor be denied, in part or in full.
+</p>
+<div class="horizontal-seperator"></div>
+</div>
+</div>
+<div id="multiple-domain-license" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="login-required-header">Standard HTML5 game license</h3>
+</div>
+<div class="modal-body">
+<h3 class="modal-header-small"></h3>
+<p> Our standard HTML5 game license supports one web domain, and unlimited subdomains. This means, the game can be hosted on
+<i>yourwebsite.com</i>, <i>abc.yourwebsite.com</i>, <i>m.yourwebsite.com</i>, <i>games.yourwebsite.com</i>, <i>client1.yourwebsite.com</i>, <i>client2.yourwebsite.com</i>,
+<i>client3.yourwebsite.com</i>, etc.
+</p>
+<h3 class="modal-header-small">I still need multiple domain licenses</h3>
+<div class="horizontal-seperator"></div>
+<p>
+Please contact <a href="/contact?subject=customlicenses" target="_blank"><b>customer support</b></a>.
+We shall prepare a custom license for you.
+</p>
+</div>
+</div>
+<div id="offline-license" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="login-required-header">Offline HTML5 game license</h3>
+</div>
+<div class="modal-body">
+<h3 class="modal-header-small"></h3>
+<p> Our Offline HTML5 game licenses will run without an internet connection. This fits into environments such as trains, busses, taxis, cruise ships, and airline entertainment systems.
+</p>
+<p>
+We support the following formats
+<ul>
+<li>HTML5</li>
+<li>Conversion into native Android APKs (v4+)</li>
+<li>Conversion into native iOS Builds</li>
+</ul>
+</p>
+<p>
+We're happy to discuss what you need. Please contact <a href="/contact?subject=offlinelicenses" target="_blank"><b>customer support</b></a> with your requirements, and we'll get back to you within 12 hours.
+</p>
+</div>
+</div>
+<div id="custom-license" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="login-required-header">Custom HTML5 game license</h3>
+</div>
+<div class="modal-body">
+<h3 class="modal-header-small"></h3>
+<p> Do you have a specific type of license that you're looking for? Do you operate in an industry that is vastly different, but you need
+games as part of your content acquisition?
+</p>
+<p>
+We're happy to discuss what you need. Please contact <a href="/contact?subject=customlicenses" target="_blank"><b>customer support</b></a> with your requirements, and we'll get back to you within 12 hours.
+</p>
+</div>
+</div>
+<div id="added-to-cart" class="modal small hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="login-required-header">Awesome!</h3>
+</div>
+<div class="modal-body">
+Duck Hunter added to cart
+</div>
+<div class="modal-footer">
+<a href="/cart" class="btn btn-primary" aria-hidden="true">View cart</a>
+<a class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Continue shopping</a>
+</div>
+</div>
+<div id="localization" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="login-required-header">Need to localize a game?</h3>
+</div>
+<div class="modal-body">
+<h3 class="modal-header-small"></h3>
+<p> Do you have specific languages you need the games to be localized in? We're able to localize the games into virtually any language you need.
+</p>
+<p>
+We're happy to discuss what you need in more detail. Please contact <a href="/contact?subject=customlicenses" target="_blank"><b>customer support</b></a> with your requirements, and we'll get back to you within 12 hours.
+</p>
+</div>
+</div>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/f2bf09f8/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+			//var game_width = "960";
+			var offset_multiplier = 0.92;
+			var original_game_width = parseInt('960');
+			var original_game_height = parseInt('540');
+			
+			var is_landscape = original_game_width>original_game_height?true:false;
+			if(!is_landscape){
+				offset_multiplier = offset_multiplier*0.78;
+			}
+			
+			var aspect_ratio = preciseRound(original_game_width/original_game_height,2);
+			var starting_game_width = $('#game-window-box').width()*offset_multiplier;
+
+			// Markdown
+			/*
+			var converter = new Markdown.Converter();	
+										
+			$('#long-description').each(function(index) {
+				$(this).html(converter.makeHtml($(this).text()));
+			});	
+			*/
+			
+			function preciseRound(num,decimals) {
+			    return Math.round(num * Math.pow(10, decimals)) / Math.pow(10, decimals);
+			}
+				
+			function resizeGameWindow(){
+				console.log('resizing game window ...')
+				console.log($('#game-window-box').width())
+				
+				// if we are portrait, do something
+				if(original_game_height>original_game_width){
+					console.log('Portrait game detected ...')
+					
+					// height is now the driver
+					var game_height = window.innerHeight*0.92;
+					
+					// derive game width from the height now
+					var game_width = Math.round(game_height*aspect_ratio) //$('#game-window-box').width();
+
+					if(original_game_width==540){
+						console.log('adjusting for 540 width ...')
+						game_height-=3;	
+					}
+
+				}else{
+					console.log('Landscape game detected')
+					var game_width = Math.min(starting_game_width,$('#game-window-box').width()*offset_multiplier); //$('#game-window-box').width();
+					
+					if(original_game_height==original_game_width){
+						// square
+						console.log('square detected ... assigning custom multiplier')
+						var game_width = $('#game-window-box').width()*0.82;
+						var game_height = game_width;
+					}else{
+						// truly landscape
+						var game_height = Math.round(game_width / (aspect_ratio));	
+
+						if(original_game_width==960){
+							console.log('adjusting for 960 width ...')
+							game_width-=2;	
+						}
+
+						if(original_game_width==640){
+							console.log('adjusting for 640 width ...')
+							game_height-=2;	
+						}						
+					}
+					
+
+				}
+				
+				console.log('game_width, game_height',game_width,game_height)
+				
+				$('#game-window').attr('width',game_width);
+				$('#game-window').attr('height',game_height);
+				
+			}
+
+			// Localize
+			Localization.initialize(['ItemAddToCart']);
+
+			// Validate
+			Validation.initialize(['/shell/validation/item/item_add_to_cart.js']);
+			
+			// Enable
+			$('#item-add-to-cart-button').enable();
+
+			function incrementShoppingCartCounter(){
+				// Increment
+				var text = $('#shopping-cart-link').text();				
+				var leftBracketIndex = text.indexOf('(')+1;
+				var rightBracketIndex = text.indexOf(')');
+				var currentCounter = parseInt(text.substring(leftBracketIndex,rightBracketIndex));
+				currentCounter+=1;
+				
+				// Inject
+				$('#shopping-cart-link').text("My shopping cart (" + currentCounter + ")");
+			}
+			
+			// ADD TO CART AJAX
+			$('#item-add-to-cart').ajaxForm({
+			    beforeSubmit: function() {
+					return $('#item-add-to-cart').valid()
+			    },
+
+			    beforeSend: function() {
+					$('.overlay-container').show();
+					$('#item-add-to-cart').attr("disabled", true);
+			    },
+			
+				success: function(data) {
+					console.log("success",data);	
+					$('#item-add-to-cart').attr("disabled", false);	
+					
+					$('#added-to-cart').modal();
+					$('#item-add-to-cart-domainlock').val('');
+					$('.overlay-container').hide();						 
+					
+					var response = JSON.parse(data);
+					
+					if(response.status.code==200){
+						incrementShoppingCartCounter();
+						console.log(response.status.message);
+						mixpanel.track('ItemGameDuckHunterAddedToCart');				
+					}
+				},
+				
+				complete: function(xhr) {
+					console.log("complete");										
+				}
+				
+			});				
+			
+			window.onresize = function(event) {
+				resizeGameWindow();
+			}
+
+			function launchLargeScreen(){		
+				$('#game-window').focus();
+
+				swal({
+				  title: "Big screen version",
+				  text: "This will open a new tab in your browser",
+				  type: "info",
+				  showCancelButton: true,
+				  confirmButtonColor: "#57ac57",
+				  confirmButtonText: "Yes, do it",
+				  closeOnConfirm: false
+				},
+				function(){
+					window.open("https://cdn-factory.marketjs.com/en/duck-hunter/index.html", "_blank");
+				  	//window.location.href = 'https://cdn-factory.marketjs.com/en/duck-hunter/index.html'; // item is the correct variable, not the user
+				});			
+			}
+
+			$(document).ready(function(){				
+				// Resize
+				resizeGameWindow();
+					
+				// Open in New window
+				$('#long-description a').attr('target', '_blank');	
+				
+				mixpanel.track('ItemGameDuckHunterPageLoad');
+				
+				
+		
+
+				ga('send', 'event', 'ItemGameDuckHunterPage', 'Load');	
+			});
+		</script>
+<div class="horizontal-seperator"></div>
+</div>
+<div id="sticky-footer">
+<div style="margin-top:0.5em;margin-bottom:1em;border-bottom:1px solid #ccc"></div>
+<div class="row-fluid">
+<div class="padding-side40">
+<footer class="footer">
+<div class="span2">
+Company
+<ul>
+<li><a href="/about">About us</a></li>
+<li><a href="/jobs">Jobs</a></li>
+<li><a href="/contact">Contact us</a></li>
+<li><a href="/tos">Terms of service</a></li>
+<li><a href="/privacy">Privacy</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/case-study">Case Studies</a></li>
+<li><a href="/12-ways-to-work-with-marketjs">12 Ways To Work With MarketJS</a></li>
+<li><a href="/testimonials">Testimonials</a></li>
+<li><a href="/free-html5-games">Free HTML5 Games</a></li>
+</ul>
+</div>
+<div class="span2">
+Services
+<ul>
+<li><a href="/game-reskin">Game Reskin</a></li>
+<li><a href="/html5-playable-ads">HTML5 Playable Ads</a></li>
+<li><a href="/messenger-html5-games">Messenger HTML5 Games</a></li>
+<li><a href="/custom-development">Custom Development</a></li>
+<li><a href="/lead-generation-games">Lead Generation Games</a></li>
+<li><a href="/game-leaderboard-system">Game Leaderboard System</a></li>
+<li><a href="/game-login-system">Game Login System</a></li>
+<li><a href="/digital-signage-games">Digital Signage Games</a></li>
+<li><a href="/private-label-games">Private Label Games</a></li>
+<li><a href="/html5-games-for-telecom-and-mobile-operators">Telco & mobile operators</a></li>
+<li><a href="/html5-games-for-airlines">Airlines and IFE providers</a></li>
+<li><a href="/bespoke-games">Bespoke Games</a></li>
+</ul>
+</div>
+<div class="span2">
+Categories
+<ul>
+<li><a href="/license-web-games">Web Games</a></li>
+<li><a href="/license-mobile-games">Mobile Games</a></li>
+<li><a href="/license-browser-games">Browser Games</a></li>
+
+<li><a href="/html5-mobile-games">HTML5 Mobile Games</a></li>
+<li><a href="/html5-games-for-kids">Kids Games</a></li>
+<li><a href="/educational-html5-games">Educational Games</a></li>
+<li><a href="/html5-multiplayer-games">Multiplayer Games</a></li>
+<li><a href="/html5-puzzle-games">Puzzle Games</a></li>
+<li><a href="/marketing-games">Marketing Games</a></li>
+<li><a href="/branded-games">Branded Games</a></li>
+<li><a href="/b2b-games">B2B Games</a></li>
+</ul>
+</div>
+<div class="span2">
+Native app licensing
+<ul>
+<li><a href="/license-android-games">Android Games</a></li>
+<li><a href="/license-ios-games">iOS Games</a></li>
+<li><a href="/buy-iphone-games">iPhone Games</a></li>
+<li><a href="/buy-android-apk">Android APK</a></li>
+
+
+<li><a href="/license-ipad-html5-games">iPad HTML5 Games</a></li>
+<li><a href="/license-iphone-html5-games">iPhone HTML5 Games</a></li>
+<li><a href="/license-android-html5-games">Android HTML5 Games</a></li>
+<li><a href="/html5-games">HTML5 Games</a></li>
+<li><a href="/mobile-html-game">Mobile HTML Game</a></li>
+<li><a href="/h5-games">H5 Games</a></li>
+</ul>
+</div>
+<div class="span2">
+Games portal
+<ul>
+<li><a href="/fortumo-games-portal">Fortumo Games Portal</a></li>
+<li><a href="/credit-card-games-portal">Credit Card Games Portal</a></li>
+<li><a href="/wap-games-portal">WAP Games Portal</a></li>
+<li><a href="/java-games-portal">Java Games Portal</a></li>
+<li><a href="/sms-billing-games">SMS Billing For Games</a></li>
+<li><a href="/html5-games-portal">HTML5 Games Portal</a></li>
+<li><a href="/mobile-games-portal">Mobile Games Portal</a></li>
+<li><a href="/subscription-games-portal">Subscription Games Portal</a></li>
+<li><a href="/sms-games-portal">SMS Games Portal</a></li>
+</ul>
+</div>
+<div class="span2">
+Serious games
+<ul>
+
+<li><a href="/social-awareness-games">Social awareness games</a></li>
+
+
+
+
+<li><a href="/activism-games">Activism games</a></li>
+
+<li><a href="/satirical-games">Satirical games</a></li>
+
+<li><a href="/social-activist-games">Social activist games</a></li>
+<li><a href="/advergames">Advergames</a></li>
+<li><a href="/bespoke-html5-games">Bespoke HTML5 Games</a></li>
+</ul>
+</div>
+</footer>
+<div class="horizontal-seperator-small"></div>
+<div class="horizontal-seperator-small"></div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="well-plain">
+<div>
+<a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay-container">
+<img src="/shell/images/loading/loader-grey.gif">
+</div>
+<script type="text/javascript">
+
+		//Weinre
+		function getQueryVariable(variable) {
+		    var query = window.parent.location.search.substring(1); // search in parent
+		    var vars = query.split('&');
+		    for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+		        if (decodeURIComponent(pair[0]) == variable) {
+		            return decodeURIComponent(pair[1]);
+		        }
+		    }
+		}
+							
+		$(document).ready(function(){
+			// Tooltips
+			$("[data-toggle=tooltip]").tooltip('hide');
+			
+			// Timeago
+			jQuery("time.timeago").timeago();
+			
+			// Fix footer at bottom of page
+			$('.footer').css('top','100%')
+			
+ 		});	
+	</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-32869486-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+mixpanel.init("252542eaa2fdf9f89a5620070c4c88de");</script>
+<script type="text/javascript">
+_linkedin_data_partner_id = "179003";
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=179003&fmt=gif" />
+</noscript>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#3c404d",
+      "text": "#d6d6d6"
+    },
+    "button": {
+      "background": "#8bed4f"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "link": "Learn more",
+    "href": "https://www.marketjs.com/privacy"
+  }
+})});
+</script>
+</body>
+</html>
